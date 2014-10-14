@@ -1,17 +1,24 @@
 function Jazzbuzz() {};
 
-	// Jazzbuzz.prototype.isDivisibleByThree = function(number) {
-	// 	return (number % 3 === 0);
-	// };
-
-	// Jazzbuzz.prototype.isDivisibleByFive = function(number) {
-	// 	return(number % 5 === 0);
-	// };
-
-	// Jazzbuzz.prototype.isDivisibleByFifteen = function(number) {
-	// 	return(number % 15 === 0);
-	// }
-
-	Jazzbuzz.prototype.isDivisibleBy = function(number, divisor) {
+	Jazzbuzz.prototype._isDivisibleBy = function(number, divisor) {
 		return(number % divisor === 0)
 	};
+
+
+	Jazzbuzz.prototype.isDivisibleByThree = function(number) {
+		return this._isDivisibleBy(number, 3);
+	};
+
+	Jazzbuzz.prototype.isDivisibleByFive = function(number) {
+		return this._isDivisibleBy(number, 5);
+	};
+
+	Jazzbuzz.prototype.isDivisibleByFifteen = function(number) {
+		return this._isDivisibleBy(number, 15);
+	}
+
+	Jazzbuzz.prototype.say = function(number){
+		if (this.isDivisibleByFifteen(number)) return "JazzBuzz";
+		if (this.isDivisibleByThree(number)) return "Jazz";
+		if (this.isDivisibleByFive(number)) return "Buzz";
+	}
