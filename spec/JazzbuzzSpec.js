@@ -13,6 +13,11 @@ describe ('Jazzbuzz', function() {
 			jazzbuzz = new Jazzbuzz();
 			expect(jazzbuzz.isDivisibleByFive(5)).toBe(true);
 		});
+
+		it('divisible by fifteen', function() {
+			jazzbuzz = new Jazzbuzz();
+			expect(jazzbuzz.isDivisibleByFifteen(15)).toBe(true);
+		});
 	});
 
 	
@@ -26,6 +31,11 @@ describe ('Jazzbuzz', function() {
 		it('divisible by five', function() {
 			jazzbuzz = new Jazzbuzz ();
 			expect (jazzbuzz.isDivisibleByFive(2)).toBe(false);
+		});
+
+		it('divisible by fifteen', function() {
+			jazzbuzz = new Jazzbuzz();
+			expect(jazzbuzz.isDivisibleByFifteen(1)).toBe(false);
 		});
 	});
 }); 

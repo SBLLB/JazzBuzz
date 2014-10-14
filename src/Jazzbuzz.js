@@ -8,3 +8,6 @@ function Jazzbuzz() {};
 		return(number % 5 === 0);
 	};
 
+	Jazzbuzz.prototype.isDivisibleByFifteen = function(number) {
+		return(number % 15 === 0);
+	}
