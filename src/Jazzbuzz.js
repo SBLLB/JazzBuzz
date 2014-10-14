@@ -21,4 +21,5 @@ function Jazzbuzz() {};
 		if (this.isDivisibleByFifteen(number)) return "JazzBuzz";
 		if (this.isDivisibleByThree(number)) return "Jazz";
 		if (this.isDivisibleByFive(number)) return "Buzz";
+		return number;
 	}

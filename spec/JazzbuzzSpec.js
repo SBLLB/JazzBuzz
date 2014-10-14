@@ -39,16 +39,20 @@ describe ('Jazzbuzz', function() {
 
 	describe ('should print', function() {
 
-		it ('print Jazz when number a multiple of 3', function() {
+		it ('Jazz when number a multiple of 3', function() {
 			expect(jazzbuzz.say(3)).toEqual("Jazz");
 		});
 
-		it ('print Buzz when number is a multiple of 5', function() {
+		it ('Buzz when number is a multiple of 5', function() {
 			expect(jazzbuzz.say(5)).toEqual("Buzz");
 		});
 
-		it ('print JazzBuzz when number is a multiple of 15', function() {
+		it ('JazzBuzz when number is a multiple of 15', function() {
 			expect(jazzbuzz.say(15)).toEqual("JazzBuzz");
+		});
+
+		it ('the number itself if its not divisble by 3, 5 or 15', function() {
+			expect(jazzbuzz.say(1)).toEqual(1);
 		});
 	});
 }); 
