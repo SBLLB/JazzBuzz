@@ -48,6 +48,10 @@ describe('JavaBuzz Game', function(){
 		it('JavaBuzz instead of multiples of fifteen', function() {
 			expect(javabuzz.game(15)).toEqual("JavaBuzz");
 		});
+
+		it('the number itself if not a multiple of 3, 5 or 15', function() {
+			expect(javabuzz.game(1)).toEqual(1);
+		});
 	});
 
 });
