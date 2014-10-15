@@ -16,6 +16,9 @@ describe('JavaBuzz', function() {
 			expect(javabuzz.isDivisibleByFive(5)).toEqual(true);
 		});
 
+		it('divisible by fifteen', function() {
+			expect(javabuzz.isDivisibleByFifteen(15)).toEqual(true);
+		});
 		
 	});
 
@@ -26,6 +29,10 @@ describe('JavaBuzz', function() {
 
 		it('divisible by five', function() {
 			expect(javabuzz.isDivisibleByFive(2)).toEqual(false);
+		});
+
+		it('divisible by fifteen', function() {
+			expect(javabuzz.isDivisibleByFifteen(1)).toEqual(false);
 		});
 	});
 
