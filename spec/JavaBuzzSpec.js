@@ -12,6 +12,10 @@ describe('JavaBuzz game', function() {
 		it('divisible by five', function() {
 			expect(javabuzz.isDivisibleByFive(5)).toEqual(true);
 		});
+
+		it('divisible by fifteen', function() {
+			expect(javabuzz.isDivisibleByFifteen(15)).toEqual(true);
+		});
 	});
 
 	describe('should know when a number is NOT', function() {
@@ -21,6 +25,10 @@ describe('JavaBuzz game', function() {
 
 		it('divisible by five', function() {
 			expect(javabuzz.isDivisibleByFive(1)).toEqual(false);
+		});
+
+		it('divisible by fifteen', function() {
+			expect(javabuzz.isDivisibleByFifteen(1)).toEqual(false);
 		});
 	});
 });
