@@ -36,5 +36,11 @@ describe('JavaBuzz game', function() {
 		it('Java instead of multiples of three', function() {
 			expect(javabuzz.play(3)).toEqual("Java");
 		});
+		it('Buzz instead of multiples of five', function() {
+			expect(javabuzz.play(5)).toEqual("Buzz");
+		});
+		it('JavaBuzz instead of multiples of Fifteen', function() {
+			expect(javabuzz.play(15)).toEqual("JavaBuzz");
+		});
 	});
 });
