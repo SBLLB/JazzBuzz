@@ -31,4 +31,10 @@ describe('JavaBuzz', function(){
 			expect(javabuzz.isDivisibleByFifteen(1)).toEqual(false);
 		});
 	});
+
+	xdescribe('shoudl print', function() {
+		it('Java instead of multiples of three', function() {
+			expect(javabuzz.play(3)).toEqual("Java")
+		});
+	});
 });
