@@ -44,5 +44,9 @@ describe('JavaBuzz', function(){
 		it('JavaBuzz instead of multiples of fifteen', function() {
 			expect(javabuzz.play(15)).toEqual("JavaBuzz");
 		});
+
+		it('the number itself when not a multiple of 3,5, 15', function() {
+			expect(javabuzz.play(1)).toEqual(1);
+		});
 	});
 });
