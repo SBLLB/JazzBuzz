@@ -11,5 +11,10 @@ describe('JavaBuzz game', function() {
 			expect(javabuzz.isDivisibleByFive(5)).toEqual(true);
 		});
 
+		it('divisible by fifteen', function() {
+			javabuzz = new Javabuzz;
+			expect(javabuzz.isDivisibleByFifteen(15)).toEqual(true);
+		});
+
 	});
 });
