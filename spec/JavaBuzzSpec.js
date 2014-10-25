@@ -1,4 +1,4 @@
-describe('FizzBuzz', function(){
+describe('Fizzbuzz', function(){
 
 	beforeEach (function() {
 		fizzbuzz = new Fizzbuzz;
@@ -17,6 +17,13 @@ describe('FizzBuzz', function(){
 
 		it('divisible by fifteen', function() {
 			expect(fizzbuzz.isDivisibleByFifteen(15)).toEqual(true);
+		});
+	});
+
+	describe('should print', function() {
+
+		it('Fizz instead of multiples of three', function() {
+			expect(fizzbuzz.play(3)).toEqual("Fizz");
 		});
 	});
 });
