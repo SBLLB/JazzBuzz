@@ -1,55 +1,10 @@
+describe('FizzBuzz', function(){
 
-describe('JavaBuzz game', function() {
+	describe('should know when a number is', function() {
 
-	beforeEach (function() {
-		javabuzz = new Javabuzz;
-
-	});
-
-	describe ('should know when a number is', function() {
-		it('divisible by three', function(){
-			expect(javabuzz.isDivisibleByThree(3)).toEqual(true);
-		});
-
-		it('divisible by five', function(){
-			expect(javabuzz.isDivisibleByFive(5)).toEqual(true);
-		});
-
-		it('divisible by fifteen', function() {
-			expect(javabuzz.isDivisibleByFifteen(15)).toEqual(true);
-		});
-	});
-
-	describe('should know when a number is NOT', function() {
 		it('divisible by three', function() {
-			expect(javabuzz.isDivisibleByThree(1)).toEqual(false);
-		});
-
-		it('divisible by five', function() {
-			expect(javabuzz.isDivisibleByFive(1)).toEqual(false);
-		});
-
-		it('divisible by fifteen', function() {
-			expect(javabuzz.isDivisibleByFifteen(1)).toEqual(false);
+			fizzbuzz = new Fizzbuzz;
+			expect(fizzbuzz.isDivisibleByThree(3)).toEqual(true);
 		});
 	});
-
-	describe('should print', function() {
-		it('Java instead of multiples of three', function() {
-			expect(javabuzz.play(3)).toEqual("Java");
-		});
-
-		it('Buzz instead of multiples of Five', function() {
-			expect(javabuzz.play(5)).toEqual("Buzz");
-		});
-
-		it('JavaBuzz instead of multiple of Fifteen', function () {
-			expect(javabuzz.play(15)).toEqual("JavaBuzz");
-		});
-
-		it('the number when not a multiple of three, five or fifteen', function() {
-			expect(javabuzz.play(1)).toEqual(1);
-		});
-	});
-
 });
