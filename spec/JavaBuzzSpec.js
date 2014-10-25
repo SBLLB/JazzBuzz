@@ -6,5 +6,10 @@ describe('FizzBuzz', function(){
 			fizzbuzz = new Fizzbuzz;
 			expect(fizzbuzz.isDivisibleByThree(3)).toEqual(true);
 		});
+
+		it('divisible by five', function() {
+			fizzbuzz = new Fizzbuzz;
+			expect(fizzbuzz.isDivisibleByFive(5)).toEqual(true);
+		});
 	});
 });
