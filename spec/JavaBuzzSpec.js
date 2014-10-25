@@ -25,5 +25,9 @@ describe('Fizzbuzz', function(){
 		it('Fizz instead of multiples of three', function() {
 			expect(fizzbuzz.play(3)).toEqual("Fizz");
 		});
+
+		it('Buzz instead of multiple of Five', function() {
+			expect(fizzbuzz.play(5)).toEqual("Buzz");
+		});
 	});
 });
