@@ -29,5 +29,13 @@ describe('Fizzbuzz', function(){
 		it('Buzz instead of multiple of Five', function() {
 			expect(fizzbuzz.play(5)).toEqual("Buzz");
 		});
+
+		it('Fizzbuzz instead of multiples of fifteen', function() {
+			expect(fizzbuzz.play(15)).toEqual("Fizzbuzz");
+		});
+
+		it('the number itself when not a multiple of 3, 5 or 15', function() {
+			expect(fizzbuzz.play(1)).toEqual(1);
+		});
 	});
 });
