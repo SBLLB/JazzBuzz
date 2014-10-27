@@ -20,7 +20,7 @@ describe('Fizzbuzz', function() {
 		});
 	});
 
-		describe('should know when a number is NOT', function() {
+	describe('should know when a number is NOT', function() {
 
 		it('divisible by three', function() {
 			expect(fizzbuzz.isDivisibleByThree(1)).toEqual(false);
@@ -34,6 +34,14 @@ describe('Fizzbuzz', function() {
 		it('divisible by fifteen', function() {
 			expect(fizzbuzz.isDivisibleByFive(1)).toEqual(false);
 		});
+	});
+
+	describe('should print', function() {
+
+		it('Fizz instead of multiples of three', function() {
+			expect(fizzbuzz.play(3)).toEqual("Fizz");
+		});
+
 	});
 
 });
