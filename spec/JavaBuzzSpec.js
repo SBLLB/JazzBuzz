@@ -46,6 +46,10 @@ describe('Fizzbuzz', function() {
 			expect(fizzbuzz.play(5)).toEqual("Buzz");
 		});
 
+		it('FizzBuzz instead of multiples of fifteen', function() {
+			expect(fizzbuzz.play(15)).toEqual("FizzBuzz");
+		});
+
 	});
 
 });
