@@ -50,6 +50,9 @@ describe('Fizzbuzz', function() {
 			expect(fizzbuzz.play(15)).toEqual("FizzBuzz");
 		});
 
+		it('the number itself when not a multiple of 3, 5 or 15', function() {
+			expect(fizzbuzz.play(1)).toEqual(1);
+		});
 	});
 
 });
