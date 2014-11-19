@@ -24,6 +24,6 @@ Test the file ```$ cd javabuzz```
 * Javascript
 * Jasmine
 
-q
+
 ### To do 
 - [ ] Get completion time down
