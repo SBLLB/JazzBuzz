@@ -41,5 +41,8 @@ describe('A game of Fizzbuzz should', function() {
 		it('Buzz instead of multiples of five', function() {
 			expect(fizzbuzz.play(5)).toEqual('Buzz');
 		});
+		it('FizzBuzz instead of multiples of fifteen', function() {
+			expect(fizzbuzz.play(15)).toEqual('FizzBuzz');
+		});
 	});
 });
