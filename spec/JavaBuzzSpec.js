@@ -44,5 +44,8 @@ describe('A game of Fizzbuzz should', function() {
 		it('FizzBuzz instead of multiples of fifteen', function() {
 			expect(fizzbuzz.play(15)).toEqual('FizzBuzz');
 		});
+		it('the number if not a multiple of three, five or fifteen', function() {
+			expect(fizzbuzz.play(1)).toEqual(1);
+		});
 	});
 });
