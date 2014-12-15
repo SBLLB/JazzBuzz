@@ -32,4 +32,10 @@ describe('A game of Fizzbuzz should', function() {
 			expect(fizzbuzz.isDivisibleByFifteen(1)).toEqual(false);
 		});
 	});
+
+	describe('say the word', function() {
+		it('Fizz instead of multiples of three', function() {
+			expect(fizzbuzz.play(3)).toEqual('Fizz');
+		});
+	});
 });
